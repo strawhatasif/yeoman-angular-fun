@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+    
+  <div>
+      This is the AWESOME view! I created this on my own on top of the generated Angular project (courtesy of the awesome Yeoman!)      
+ </div>
+      
+ <br />
+ <div>{{awesomeNumber | currency}}</div>
+ <br />      
+
+ <div>What is your name? <input type="text" ng-model="firstName" required ></div>
+      
+ <br />
+
+ <div>Welcome to my Angular App, {{firstName}} !</div>
+
+ <br />
+<!-- Using ng-repeat to print the name and nickname for a few animals -->      
+ <ul>
+    <li ng-repeat="animals in animals">
+        <span>
+            {{ animals.name }} also known as {{ animals.nickname }}
+        </span>
+     </li>     
+ </ul>      
+      
+ <br />
+ <button ng-click="myFunction()">What do I do?</button>
+      
+  </body>
